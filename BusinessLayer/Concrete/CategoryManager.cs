@@ -12,13 +12,10 @@ namespace BusinessLayer.Concrete
     public class CategoryManager : ICategoryService
     {
 
-        CategoryRepository categoryRepository = new CategoryRepository();
+        GenericRepository<Category> repo = new GenericRepository<Category>();
         public void CategoryAdd(Category category)
         {
-            if (category.CategoryName != ""&& category.CategoryDescription!="")
-            {
-
-            }
+           
         }
 
         public void CategoryDelete(Category category)

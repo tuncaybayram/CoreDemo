@@ -1,13 +1,15 @@
-﻿using DataAccsessLayer.Abstract;
+﻿using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccsessLayer.Repositories
+namespace DataAccsessLayer.Abstract
 {
-    public class BlogRepository:IBlogDal
+    public interface IAboutDal:IGenericDal<About>
     {
+
+
     }
 }
