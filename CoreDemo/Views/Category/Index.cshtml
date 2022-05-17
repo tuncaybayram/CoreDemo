@@ -4,9 +4,9 @@
     Layout = null;
 }
 
-<!DOCTYPE html>
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
-<table>
+<table class="table table-bordered">
     <tr>
         <th>ID</th>
         <th>Kategori Adı</th>
@@ -20,6 +20,8 @@
             <td>@item.CategoryID</td>
             <td>@item.CategoryName</td>
             <td>@item.CategoryStatus</td>
+            <td> <a href="#" class="btn btn-warning">Detay</a></td>
+            <td> <a href="#" class="btn btn-danger">Sil</a></td>
 
 
         </tr>
